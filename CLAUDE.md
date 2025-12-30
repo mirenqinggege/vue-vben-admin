@@ -197,6 +197,114 @@ pnpm build --force
 # 或删除 .turbo 缓存目录
 ```
 
+## 开发规范
+
+### 添加新功能流程
+
+#### 1. 添加新页面
+
+```bash
+# 创建页面组件（以 web-antd 为例）
+apps/web-antd/src/views/[模块名]/index.vue
+```
+
+#### 2. 添加路由
+
+在 `apps/web-antd/src/router/routes/modules/` 创建路由文件：
+
+```typescript
+import type { RouteRecordRaw } from 'vue-router';
+import { $t } from '#/locales';
+
+const routes: RouteRecordRaw[] = [
+  {
+    name: 'YourModule',
+    path: '/your-module',
+    component: () => import('#/views/your-module/index.vue'),
+    meta: {
+      icon: 'lucide:your-icon',
+      title: $t('page.yourModule.title'),
+    },
+  },
+];
+
+export default routes;
+```
+
+#### 3. 添加国际化
+
+在 `apps/web-antd/src/locales/langs/` 目录下的 `page.json` 添加：
+
+```json
+{
+  "yourModule": {
+    "title": "你的模块"
+  }
+}
+```
+
+在代码中使用：
+
+```typescript
+import { $t } from '#/locales';
+$t('page.yourModule.title');
+```
+
+### 路由配置规范
+
+- **路由模块目录**：`apps/web-antd/src/router/routes/modules/`
+- **自动加载**：使用 `import.meta.glob` 自动加载模块，创建文件后自动生效
+- **菜单生成**：菜单由路由 `meta` 信息自动生成，无需单独配置
+
+### API 调用规范
+
+- **API 目录**：`apps/web-antd/src/api/`
+- **请求客户端**：使用封装的 `requestClient`
+- **错误处理**：已内置认证失败和错误信息拦截器
+
+```typescript
+// API 定义示例
+export async function getUserInfoApi() {
+  return requestClient.get<UserInfo>('/user/info');
+}
+```
+
+### 状态管理规范
+
+- **Store 目录**：`packages/stores/src/modules/`
+- **使用 Pinia**：全局状态管理
+- **持久化**：使用 `pinia-plugin-persistedstate`
+
+```typescript
+export const useYourStore = defineStore('your-store', {
+  state: () => ({
+    /* ... */
+  }),
+  actions: {
+    /* ... */
+  },
+  persist: {
+    pick: ['key1', 'key2'],
+  },
+});
+```
+
+### 组件开发规范
+
+- **UI 组件**：放在 `packages/@core/ui-kit/` 下对应分类目录
+- **通用组件**：放在 `packages/effects/common-ui/`
+- **页面组件**：放在 `apps/web-antd/src/views/` 下对应模块目录
+
+### 导入路径别名
+
+- `#/`：指向当前应用 `src/` 目录
+- `@vben/xxx`：指向 packages 下对应包
+
+```typescript
+import { $t } from '#/locales';
+import { useUserStore } from '@vben/stores';
+```
+
 ## 相关链接
 
 - 官方文档：https://doc.vben.pro/

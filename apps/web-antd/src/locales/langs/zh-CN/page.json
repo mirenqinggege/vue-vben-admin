@@ -11,5 +11,139 @@
     "title": "概览",
     "analytics": "分析页",
     "workspace": "工作台"
+  },
+  "supplyChain": {
+    "title": "供应链集采",
+    "platform": "供应链集采平台",
+    "stats": {
+      "pendingApproval": "待审批",
+      "inProgress": "进行中",
+      "pendingReceipt": "待收货",
+      "completed": "已完成",
+      "monthlyAmount": "本月采购额",
+      "supplierCount": "供应商数"
+    },
+    "modules": {
+      "demand": "需求管理",
+      "supplier": "供应商管理",
+      "procurement": "采购执行",
+      "performance": "履约协同",
+      "settlement": "结算对账",
+      "analytics": "数据分析"
+    },
+    "todo": {
+      "title": "待办事项",
+      "type": "类型",
+      "no": "单号",
+      "status": "状态",
+      "date": "日期"
+    },
+    "trend": "采购趋势",
+    "moduleList": "功能模块",
+    "demand": {
+      "submit": { "title": "需求提报" },
+      "review": { "title": "需求审核" },
+      "summary": { "title": "需求汇总与拆分" },
+      "change": { "title": "需求变更管理" }
+    },
+    "supplier": {
+      "entry": { "title": "供应商准入" },
+      "classification": { "title": "供应商分类分级" },
+      "performance": { "title": "供应商绩效评估" },
+      "collaboration": { "title": "供应商协作" }
+    },
+    "procurement": {
+      "method": { "title": "采购方式管理" },
+      "bidding": { "title": "招标/比价管理" },
+      "contract": { "title": "合同管理" },
+      "order": { "title": "订单管理" }
+    },
+    "performance": {
+      "shipment": { "title": "发货通知" },
+      "receiving": { "title": "收货与验收" },
+      "return": { "title": "退换货管理" },
+      "logistics": { "title": "物流轨迹跟踪" }
+    },
+    "settlement": {
+      "invoice": { "title": "发票管理" },
+      "reconciliation": { "title": "自动对账" },
+      "payment": { "title": "付款申请与审批" },
+      "details": { "title": "结算明细查询" }
+    },
+    "analytics": {
+      "dashboard": { "title": "采购数据看板" },
+      "cost": { "title": "成本分析" },
+      "report": { "title": "供应商绩效报表" },
+      "forecast": { "title": "需求预测" }
+    }
+  },
+  "supplyFinance": {
+    "title": "供应链金融",
+    "platform": "供应链金融平台",
+    "stats": {
+      "pendingApproval": "待审批",
+      "financing": "融资中",
+      "pendingRepayment": "待还款",
+      "settled": "已结清",
+      "creditLimit": "授信总额",
+      "outstanding": "在融余额"
+    },
+    "modules": {
+      "financing": "融资服务",
+      "verification": "贸易核验",
+      "riskControl": "风控管理",
+      "settlement": "资金结算",
+      "ecosystem": "生态协同",
+      "operations": "运营管理"
+    },
+    "applications": {
+      "title": "融资申请",
+      "no": "融资单号",
+      "amount": "融资金额",
+      "status": "状态",
+      "date": "申请日期"
+    },
+    "trend": "融资趋势",
+    "moduleList": "功能模块",
+    "financing": {
+      "receivables": { "title": "应收账款融资" },
+      "order": { "title": "订单融资" },
+      "pledge": { "title": "动产质押融资" },
+      "bill": { "title": "票据融资" },
+      "prepayment": { "title": "预付款融资" }
+    },
+    "verification": {
+      "data": { "title": "数据对接验证" },
+      "document": { "title": "凭证上传与审核" },
+      "transaction": { "title": "交易流水查询" },
+      "blockchain": { "title": "区块链存证" }
+    },
+    "risk": {
+      "credit": { "title": "信用评估" },
+      "monitor": { "title": "动态风险监控" },
+      "alert": { "title": "风险预警" },
+      "disposal": { "title": "风险处置" },
+      "compliance": { "title": "合规管理" }
+    },
+    "settlement": {
+      "disbursement": { "title": "融资放款" },
+      "repayment": { "title": "自动还款" },
+      "escrow": { "title": "货款代收代付" },
+      "clearing": { "title": "对账与清算" },
+      "account": { "title": "账户管理" }
+    },
+    "ecosystem": {
+      "role": { "title": "多角色账户体系" },
+      "sharing": { "title": "数据共享中台" },
+      "message": { "title": "消息协同" },
+      "logistics": { "title": "物流协同" }
+    },
+    "operations": {
+      "user": { "title": "用户管理" },
+      "product": { "title": "产品管理" },
+      "workflow": { "title": "流程配置" },
+      "report": { "title": "报表管理" },
+      "support": { "title": "客服支持" }
+    }
   }
 }

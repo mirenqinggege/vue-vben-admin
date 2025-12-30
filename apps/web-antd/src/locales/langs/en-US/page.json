@@ -11,5 +11,139 @@
     "title": "Dashboard",
     "analytics": "Analytics",
     "workspace": "Workspace"
+  },
+  "supplyChain": {
+    "title": "Supply Chain",
+    "platform": "Supply Chain Procurement Platform",
+    "stats": {
+      "pendingApproval": "Pending Approval",
+      "inProgress": "In Progress",
+      "pendingReceipt": "Pending Receipt",
+      "completed": "Completed",
+      "monthlyAmount": "Monthly Amount",
+      "supplierCount": "Suppliers"
+    },
+    "modules": {
+      "demand": "Demand Management",
+      "supplier": "Supplier Management",
+      "procurement": "Procurement",
+      "performance": "Performance",
+      "settlement": "Settlement",
+      "analytics": "Analytics"
+    },
+    "todo": {
+      "title": "To-Do List",
+      "type": "Type",
+      "no": "No.",
+      "status": "Status",
+      "date": "Date"
+    },
+    "trend": "Procurement Trend",
+    "moduleList": "Modules",
+    "demand": {
+      "submit": { "title": "Demand Submission" },
+      "review": { "title": "Demand Review" },
+      "summary": { "title": "Demand Summary & Split" },
+      "change": { "title": "Demand Change Management" }
+    },
+    "supplier": {
+      "entry": { "title": "Supplier Entry" },
+      "classification": { "title": "Supplier Classification" },
+      "performance": { "title": "Supplier Performance Evaluation" },
+      "collaboration": { "title": "Supplier Collaboration" }
+    },
+    "procurement": {
+      "method": { "title": "Procurement Method Management" },
+      "bidding": { "title": "Bidding Management" },
+      "contract": { "title": "Contract Management" },
+      "order": { "title": "Order Management" }
+    },
+    "performance": {
+      "shipment": { "title": "Shipment Notification" },
+      "receiving": { "title": "Receiving & Acceptance" },
+      "return": { "title": "Return Management" },
+      "logistics": { "title": "Logistics Tracking" }
+    },
+    "settlement": {
+      "invoice": { "title": "Invoice Management" },
+      "reconciliation": { "title": "Auto Reconciliation" },
+      "payment": { "title": "Payment Application & Approval" },
+      "details": { "title": "Settlement Details" }
+    },
+    "analytics": {
+      "dashboard": { "title": "Procurement Dashboard" },
+      "cost": { "title": "Cost Analysis" },
+      "report": { "title": "Supplier Performance Report" },
+      "forecast": { "title": "Demand Forecast" }
+    }
+  },
+  "supplyFinance": {
+    "title": "Supply Finance",
+    "platform": "Supply Chain Finance Platform",
+    "stats": {
+      "pendingApproval": "Pending Approval",
+      "financing": "Financing",
+      "pendingRepayment": "Pending Repayment",
+      "settled": "Settled",
+      "creditLimit": "Credit Limit",
+      "outstanding": "Outstanding"
+    },
+    "modules": {
+      "financing": "Financing Services",
+      "verification": "Trade Verification",
+      "riskControl": "Risk Control",
+      "settlement": "Fund Settlement",
+      "ecosystem": "Ecosystem",
+      "operations": "Operations"
+    },
+    "applications": {
+      "title": "Financing Applications",
+      "no": "Application No.",
+      "amount": "Amount",
+      "status": "Status",
+      "date": "Date"
+    },
+    "trend": "Financing Trend",
+    "moduleList": "Modules",
+    "financing": {
+      "receivables": { "title": "Receivables Financing" },
+      "order": { "title": "Order Financing" },
+      "pledge": { "title": "Pledge Financing" },
+      "bill": { "title": "Bill Financing" },
+      "prepayment": { "title": "Prepayment Financing" }
+    },
+    "verification": {
+      "data": { "title": "Data Verification" },
+      "document": { "title": "Document Upload & Review" },
+      "transaction": { "title": "Transaction Query" },
+      "blockchain": { "title": "Blockchain Evidence" }
+    },
+    "risk": {
+      "credit": { "title": "Credit Assessment" },
+      "monitor": { "title": "Risk Monitoring" },
+      "alert": { "title": "Risk Alert" },
+      "disposal": { "title": "Risk Disposal" },
+      "compliance": { "title": "Compliance Management" }
+    },
+    "settlement": {
+      "disbursement": { "title": "Loan Disbursement" },
+      "repayment": { "title": "Auto Repayment" },
+      "escrow": { "title": "Escrow Services" },
+      "clearing": { "title": "Clearing & Settlement" },
+      "account": { "title": "Account Management" }
+    },
+    "ecosystem": {
+      "role": { "title": "Multi-Role Account System" },
+      "sharing": { "title": "Data Sharing Platform" },
+      "message": { "title": "Message Collaboration" },
+      "logistics": { "title": "Logistics Collaboration" }
+    },
+    "operations": {
+      "user": { "title": "User Management" },
+      "product": { "title": "Product Management" },
+      "workflow": { "title": "Workflow Configuration" },
+      "report": { "title": "Report Management" },
+      "support": { "title": "Customer Support" }
+    }
   }
 }
