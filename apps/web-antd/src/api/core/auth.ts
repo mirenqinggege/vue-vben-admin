@@ -10,11 +10,16 @@ export namespace AuthApi {
   /** 登录接口返回值 */
   export interface LoginResult {
     accessToken: string;
+    refreshToken: string;
+    tokenType: string;
+    expiresIn: number;
+    username: string;
   }
 
   export interface RefreshTokenResult {
-    data: string;
-    status: number;
+    accessToken: string;
+    refreshToken: string;
+    tokenType: string;
   }
 }
 
@@ -22,16 +27,23 @@ export namespace AuthApi {
  * 登录
  */
 export async function loginApi(data: AuthApi.LoginParams) {
-  return requestClient.post<AuthApi.LoginResult>('/auth/login', data);
+  return requestClient.post<AuthApi.LoginResult>('/login', data);
 }
 
 /**
  * 刷新accessToken
  */
-export async function refreshTokenApi() {
-  return baseRequestClient.post<AuthApi.RefreshTokenResult>('/auth/refresh', {
-    withCredentials: true,
-  });
+export async function refreshTokenApi(refreshToken: null | string) {
+  return baseRequestClient.post<AuthApi.RefreshTokenResult>(
+    '/auth/refresh-token',
+    {
+      refreshToken,
+      deviceId: 'web-desktop',
+    },
+    {
+      withCredentials: true,
+    },
+  );
 }
 
 /**
